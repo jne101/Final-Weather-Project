@@ -1,0 +1,32 @@
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.weather-app {
+  max-width: 698px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #f7f5fc;
+  border-radius: 5px;
+}
+h1 {
+  font-weight: 840;
+  font-size: 38px;
+  color: #272142;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 48px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #a8a5b4;
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  line-height: 24px;
+}
