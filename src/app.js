@@ -48,9 +48,9 @@ function displayTemperature(response) {
   );
 
   iconElement.setAttribute("alt", response.data.condition.description);
-}
 
-celsiusTemp = response.data.temperature.current;
+  celsiusTemp = response.data.temperature.current;
+}
 
 function search(city) {
   let apiKey = "90fd2ea8306bo7aa2f0288345e56093t";
@@ -66,15 +66,19 @@ function handleSubmit(event) {
 
 function displayFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenheitTemperature = Math.round((celsiusTemp * 9) / 5 + 32);
   let temperatureElement = document.querySelector("#main-temp");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = Math.round((celsiusTemp * 9) / 5 + 32);
   temperatureElement.innerHTML = fahrenheitTemperature;
 }
 
 function displayCelsiusTemp(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#main-temp");
-  temperatureElement.innerHTML = celsiusTemp;
+  temperatureElement.innerHTML = Math.round(celsiusTemp);
 }
 
 let celsiusTemp = null;
