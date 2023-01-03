@@ -2,6 +2,10 @@ body {
   font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
+.mb-5 {
+  color: red;
+}
+
 .app-wrapper {
   max-width: 660px;
   margin: 20px auto;
@@ -67,4 +71,26 @@ li {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 40px;
+  margin-bottom: -25px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #a8a5b4;
+  opacity: 0.6;
+}
+
+.weather-forecast-temps {
+  font-size: 13px;
+  color: rgb(48, 192, 232);
+  text-align: center;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }
