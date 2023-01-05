@@ -1,9 +1,6 @@
 body {
   font-family: Lato, Arial, Helvetica, sans-serif;
-}
-
-.mb-5 {
-  color: red;
+  background: #e8f4f7;
 }
 
 .app-wrapper {
@@ -14,8 +11,25 @@ body {
 .weather-app {
   padding: 30px;
   border: 1px solid #f7f5fc;
-  border-radius: 5px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 30px 50px (65 50 100 /8%);
+  color: #878787;
 }
+
+.weather-app .form-control {
+  background: #e8f4f7;
+  border: none;
+  padding: 10px;
+  color: #a8a5b4;
+}
+
+.weather-app .btn {
+  background: rgb(48, 192, 232);
+  border: none;
+  padding: 10px;
+}
+
 h1 {
   font-weight: 840;
   font-size: 38px;
@@ -37,6 +51,14 @@ li {
   list-style: none;
   text-transform: capitalize;
   line-height: 24px;
+}
+
+.humidity-color {
+  color: rgb(48, 192, 232);
+}
+
+.wind-color {
+  color: rgb(48, 192, 232);
 }
 
 .WeatherInfo .temperature-container {
